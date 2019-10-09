@@ -1,0 +1,36 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700
+}
+
+a:focus {
+  outline: none;
+}
+
+.card {
+  margin: 4rem auto
+}
+
+.card-header {
+  padding: 2rem 0
+}
+
+.card-body {
+  padding: 2rem
+}
+
+.graphCard {
+  display: none;
+}
+
+#resultsTableHeading, #infoTableHeading {
+  display: none;
+  margin-top: 4rem
+}
+
+.table {
+  display: none;
+}
