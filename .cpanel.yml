@@ -1,0 +1,6 @@
+---
+deployment:
+ tasks:
+  - export DEPLOYPATH=/home/christian/public_html/401k/
+  - /bin/cp index.html $DEPLOYPATH
+  - /bin/cp -R assets/ $DEPLOYPATH
