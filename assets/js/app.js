@@ -24,9 +24,13 @@ class Data {
     if(matched) {
       var bgColor = "#202020";
       var fgColor = "#ffffff";
+      var gridColor = "#3b3b3b";
+      var lineColor = "#5b5b5b";
     } else {
       var bgColor = "#ffffff";
-      var fgColor = "#000000";
+      var fgColor = "#222222";
+      var gridColor = "#555555";
+      var lineColor = "#000000";
     }
     
     const balanceTrace = {
@@ -48,31 +52,49 @@ class Data {
       }
     };
     const balanceTitle = {
-      title: "Total Balance",
+      title: {
+        text: "Total Balance",
+        color: fgColor
+      },
       paper_bgcolor: bgColor,
       plot_bgcolor: bgColor,
       font: {
-        color: "#222"
+        color: fgColor
       },
       yaxis: {
-        title: "Total Balance"
+        title: "Total Balance",
+        gridcolor: gridColor,
+        zerolinecolor: gridColor,
+        linecolor: lineColor
       },
       xaxis: {
-        title: "Months"
+        title: "Months",
+        gridcolor: gridColor,
+        zerolinecolor: gridColor,
+        linecolor: lineColor
       }
     };
     const interestTitle = {
-      title: "Accrued Interest",
+      title: {
+        text: "Accrued Interest",
+        color: fgColor
+      },
       paper_bgcolor: bgColor,
       plot_bgcolor: bgColor,
       font: {
-        color: "#222"
+        color: fgColor
       },
       yaxis: {
-        title: "Accrued Interest"
+        title: "Accrued Interest",
+        gridcolor: gridColor,
+        zerolinecolor: gridColor,
+        linecolor: lineColor
       },
       xaxis: {
-        title: "Months"
+        title: "Months",
+        gridcolor: gridColor,
+        zerolinecolor: gridColor,
+        linecolor: lineColor
       }
     };
     return [balanceTrace, interestTrace, balanceTitle, interestTitle];
