@@ -20,6 +20,15 @@ class Data {
     return adjustedRate;
   }
   graphData(monthsArr, balanceArr, interestArr) {
+    let matched = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if(matched) {
+      var bgColor = "#202020";
+      var fgColor = "#ffffff";
+    } else {
+      var bgColor = "#ffffff";
+      var fgColor = "#000000";
+    }
+    
     const balanceTrace = {
       x: monthsArr,
       y: balanceArr,
@@ -40,8 +49,8 @@ class Data {
     };
     const balanceTitle = {
       title: "Total Balance",
-      paper_bgcolor: "#ffffff",
-      plot_bgcolor: "#ffffff",
+      paper_bgcolor: bgColor,
+      plot_bgcolor: bgColor,
       font: {
         color: "#222"
       },
@@ -54,8 +63,8 @@ class Data {
     };
     const interestTitle = {
       title: "Accrued Interest",
-      paper_bgcolor: "#ffffff",
-      plot_bgcolor: "#ffffff",
+      paper_bgcolor: bgColor,
+      plot_bgcolor: bgColor,
       font: {
         color: "#222"
       },
