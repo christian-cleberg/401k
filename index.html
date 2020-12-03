@@ -66,16 +66,19 @@
               </div>
             </div>
           </form>
-          <hr style="margin:2rem auto;" />
+          <hr style="margin:2rem auto;">
           <div class="form-row">
-            <div class="col-md-6">
+            <div class="col-md-5">
               <label for="years">I want to retire in this many years: </label>
-              <input id="years" class="form-control" placeholder="ex: 10" aria-labelledby="yearsLabel"></input>
+              <input id="years" class="form-control" placeholder="ex: 10" aria-labelledby="yearsLabel" data-com.bitwarden.browser.user-edited="yes">
               <a href="#graphCard" class="btn btn-outline-primary mt-2 w-100" onclick="retirementYears()">Submit</a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-2 d-flex justify-content-center align-items-center py-3">
+              <p class="h3 text-center">&larr; OR &rarr;</p>
+            </div>
+            <div class="col-md-5">
               <label for="money">I want to retire with this much money:</label>
-              <input id="money" class="form-control" placeholder="ex: 50000" aria-labelledby="moneyLabel"></input>
+              <input id="money" class="form-control" placeholder="ex: 50000" aria-labelledby="moneyLabel">
               <a href="#graphCard" class="btn btn-outline-primary mt-2 w-100" onclick="retirementMoney()">Submit</a>
             </div>
           </div>
@@ -85,7 +88,7 @@
     <!-- graph panel -->
     <div id="graphCard" class="graphCard card">
       <div class="card-header">
-        <h2 class="text-center">401k Savings Plan: Graph</h2>
+        <h2 class="text-center">Projections Graph</h2>
       </div>
       <div class="card-body">
         <div class="row">

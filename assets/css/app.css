@@ -3,7 +3,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700
+  font-weight: 700;
 }
 
 a:focus {
@@ -11,15 +11,15 @@ a:focus {
 }
 
 .card {
-  margin: 4rem auto
+  margin: 4rem auto;
 }
 
 .card-header {
-  padding: 2rem 0
+  padding: 2rem 0;
 }
 
 .card-body {
-  padding: 2rem
+  padding: 2rem;
 }
 
 .graphCard {
@@ -28,11 +28,17 @@ a:focus {
 
 #resultsTableHeading, #infoTableHeading {
   display: none;
-  margin-top: 4rem
+  margin-top: 4rem;
 }
 
 .table {
   display: none;
+}
+
+.card,
+.btn,
+.form-control {
+  border-radius: 0;
 }
 
 @media(prefers-color-scheme: dark) {
