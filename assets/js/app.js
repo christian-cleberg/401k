@@ -29,8 +29,8 @@ class Data {
     } else {
       var bgColor = "#ffffff";
       var fgColor = "#222222";
-      var gridColor = "#555555";
-      var lineColor = "#000000";
+      var gridColor = "#c8c8c8";
+      var lineColor = "#555555";
     }
     
     const balanceTrace = {
