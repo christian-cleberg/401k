@@ -1,6 +1,0 @@
----
-deployment:
- tasks:
-  - export DEPLOYPATH=/home/clebergi/public_html/401k/
-  - /bin/cp index.html $DEPLOYPATH
-  - /bin/cp -R assets/ $DEPLOYPATH
